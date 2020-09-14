@@ -12,7 +12,6 @@ public class Point {
         double result1 = Point.distance(0, 0, 2, 0);
         double result2 = Point.distance(3, 4, 2, 5);
         double result3 = Point.distance(3, 3, 2, 0);
-
         System.out.println("result1 (0, 0) to (2, 0) is " + result1);
         System.out.println("result2 (3, 4) to (2, 5) is " + result2);
         System.out.println("result3 (3, 3) to (2, 0) is " + result3);
