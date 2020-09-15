@@ -2,7 +2,7 @@ package ru.job4j.array;
 
 public class AlgoArray {
     /**
-     * Сортировка массива
+     * Сортировка массива перебором элементов
      * @param args
      */
     public static void main(String[] args) {
