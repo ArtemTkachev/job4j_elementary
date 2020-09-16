@@ -3,9 +3,28 @@ package ru.job4j.condition;
 import org.junit.Assert;
 import org.junit.Test;
 
-import static org.junit.Assert.*;
+import static org.hamcrest.Matchers.closeTo;
+import static org.junit.Assert.assertThat;
 
 public class PointTest {
+
+    @Test
+    public void when222to111then1p73() {
+        double rsl = new Point(2, 2, 2).distance3D(new Point(1, 1, 1));
+        assertThat(rsl, closeTo(1.73, 0.01));
+    }
+
+    @Test
+    public void when000to200then2() {
+        double rsl = new Point(0, 0, 0).distance3D(new Point(2, 0, 0));
+        assertThat(rsl, closeTo(2, 0.01));
+    }
+
+    @Test
+    public void when00to20then2P() {
+        double rsl = new Point(0, 0).distance(new Point(2, 0));
+        assertThat(rsl, closeTo(2, 0.01));
+    }
 
     @Test
     public void when00to20then2() {
