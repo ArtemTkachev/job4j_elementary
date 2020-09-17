@@ -3,9 +3,8 @@ package ru.job4j.oop;
 import java.time.LocalDate;
 
 public class Dentist extends Doctor {
-    private String name;
-    private String surname;
-    private String education;
-    private LocalDate bithday;
-    private Pacient[] pacients;
+
+    public Dentist(String name, String surname, String education, LocalDate bithday, Pacient[] pacients) {
+        super(name, surname, education, bithday, pacients);
+    }
 }

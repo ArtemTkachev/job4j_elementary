@@ -4,11 +4,12 @@ import java.time.LocalDate;
 import java.util.Arrays;
 
 public class Engineer extends Profession {
-    private String name;
-    private String surname;
-    private String education;
-    private LocalDate bithday;
     private Computer computer;
+
+    public Engineer(String name, String surname, String education, LocalDate bithday, Computer computer) {
+        super(name, surname, education, bithday);
+        this.computer = computer;
+    }
 
     public Computer getComputer() {
         return computer;

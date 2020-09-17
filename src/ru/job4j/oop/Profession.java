@@ -9,6 +9,13 @@ public class Profession {
     private String education;
     private LocalDate bithday;
 
+    public Profession(String name, String surname, String education, LocalDate bithday) {
+        this.name = name;
+        this.surname = surname;
+        this.education = education;
+        this.bithday = bithday;
+    }
+
     public String getName() {
         return name;
     }

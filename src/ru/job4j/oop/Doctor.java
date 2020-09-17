@@ -3,11 +3,12 @@ package ru.job4j.oop;
 import java.time.LocalDate;
 
 public class Doctor extends Profession {
-    private String name;
-    private String surname;
-    private String education;
-    private LocalDate bithday;
     private Pacient[] pacients;
+
+    public Doctor(String name, String surname, String education, LocalDate bithday, Pacient[] pacients) {
+        super(name, surname, education, bithday);
+        this.pacients = pacients;
+    }
 
     public Pacient[] getPacients() {
         return pacients;
