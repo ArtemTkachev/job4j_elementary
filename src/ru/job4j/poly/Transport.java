@@ -6,5 +6,4 @@ public interface Transport {
     void passengers(int numbPass);
 
     double fuel(double amountFuel);
-
 }
