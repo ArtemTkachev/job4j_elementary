@@ -1,5 +1,7 @@
 package ru.job4j;
 
+import java.sql.Array;
+
 public class Main {
     public static void main(String[] args) {
         System.out.println("Hello!");
@@ -19,6 +21,5 @@ public class Main {
         short s = 1500;
         char r = (char) s;
         double t = r;
-        System.out.println(t);
     }
 }
