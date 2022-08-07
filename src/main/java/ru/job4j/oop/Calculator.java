@@ -4,7 +4,7 @@ public class Calculator {
     private static int x = 5;
 
     public static int minus(int z) {
-        return x - z;
+        return z - x;
     }
 
     public double divide(int i) {
